@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100%;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  max-width: 74vw;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  /* background-color: aqua; */
+}
+.heade_container{
+  margin-bottom:2.8rem ;
+}
+.header_title{
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.heade_desc{
+  max-width:568px ;
+  text-align: center;
+  color: rgb(105, 99, 99);
+  margin: 0 auto;
+}
+.main_container{
+  display: grid;
+  gap: 1,5rem;
+  /* grid-template-columns: repeat(1,1fr); 
+  ham sare @media contents ki jgh sirf autofit krkr gtc
+  ke andar sare kam kr skte hai responsive wale like*/
+  grid-template-columns: repeat(auto-fit,minmax(350px, 400px));
+  justify-content: center;
+  padding: 1rem;
+}
+/* @media (min-width : 650px){
+ .main_container{
+  grid-template-columns: repeat(2,1fr);
+ }
+}
+@media (min-width : 1080px){
+  .main_container{
+   grid-template-columns: repeat(3,1fr);
+  }
+ }
+ @media (min-width : 1340px){
+  .main_container{
+   grid-template-columns: repeat(4  ,1fr);
+  }
+ } */
+ 
+.card_container{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(111,109,109);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  height: 390px;
+  width: 280px;
+}
+
+.card_image_container{
+  position: relative;
+  overflow: hidden;
+  height: 7rem;
+}
+@media(min-width:760px){
+  .card_image_container{
+    height:12rem;
+  }
+}
+.card_image{
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+   
+}
+.card_title_container{
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.card_container:hover .card_image{
+  transform: scale(1.1);
+  transition-duration:200ms ;
+
+}
+.card_title{
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem ;
+  margin-bottom: 0.3rem;
+  color: rgb(24, 23, 23);
+}
+.card_title_anchor{
+  color: rgb(23, 23, 195);
+}
+.card_desc{
+  color: rgb(137, 126, 126);
+  font-size: 1rem;
+}
+.card_footer_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding:0, 1.5rem;
+  padding-bottom:1.5rem ;
+}
+.author_container{
+  display: flex;
+  flex-direction:center ;
+  align-items: center;
+  gap: 1rem;
+}
+.author_avatar_container{
+  height: 2.5rem;
+  width: 2.5rem;
+  overflow: hidden;
+  border: 1px solid rgb(72, 67, 67);
+  border-radius: 50%;
+  background-color: rgb(207, 201,201);
+}
+.autho_info_container{
+  display: flex;
+  flex-direction: column;
+}
+.author_name{
+  color: blue;
+}
+.author_date{
+  color: rgb(137, 126, 126);
+
+}
+.card_tag_container{
+  font-size: 1rem;
+  border: 1px solid rgb(74, 67, 67);
+  line-height: 1.3rem;
+  border-radius: 2px;
+  padding: 0.25rem;
+  color: grey;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100px;
+            height: 100px;
+            background-color: burlywood;
+            border: 5px solid black;
+        }
+        .box{
+            width: 350px;
+            height: 20vh;
+            background-color: blueviolet;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            /* animation-name: rightMoment;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 2s; */
+            /* animation-timing-function: cubic-bezier(0.1,0.7,1.0,0.1);  for curve*/
+            /* animation-timing-function: linear; */
+            /* ayega jayega box alternate */
+            /* animation-direction: alternate; */ 
+            /* ṣhort hand notation */
+            /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+            animation: 5s linear 1s infinite alternate none running rightMoment;
+        }
+        .box2{
+            width: 350px;
+            height: 20vh;
+            background-color: blueviolet;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation: 5s ease-in 1s infinite alternate none running leftMoment;
+        }
+        #circle{
+            width: 100px;
+            height: 200px;
+            background-color: blueviolet;
+            border: 3px solid yellow;
+            border-radius: 50px;
+            margin: 10px;
+            position: relative;
+            top: 30%;
+            left:40% ;
+            animation: 10s ease-in-out 0s infinite alternate-reverse none running circleMoment;
+        }
+        @keyframes rightMoment {
+            from{
+               top: 0;
+               left: 0;
+            }
+            to{
+                top: 0;
+                left: 1200px;
+            }
+        }
+        @keyframes leftMoment {
+            from{
+               top: 650px;
+               left: 1300px;
+            }
+            to{
+                top: 650px;
+                left: 0px;
+            }
+        }
+        @keyframes circleMoment {
+           0%{
+            top:1% ;
+            left:5% ;
+           }
+           30%{
+            top: 90%;
+            left: 10%;
+           }
+           60%{
+            top:70% ;
+            left:10% ;
+
+           }
+           100%{
+            top:75% ;
+            left:90% ;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="contianer">
+        <div class="box">
+        </div>
+        <div class="box2">
+        </div>
+        <div cid="circle"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+#starting{
+    display: flex;
+    align-items: center;
+    justify-content: space;
+    padding: 20px 80px;
+    background-color: aliceblue;
+    box-shadow: 0 5px 15px rgba(0, 0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#firstro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#firstr li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#fir#str li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#firstr li a:hover {
+    color: aqua;  
+
+}
+#firstr li a:hover,;
+#firstr li a:active{
+    color: aquamarine;
+}
+#firstr li a:active::after
+#firstr li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: aqua;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#hero{
+    background-image: url("img/hero4.png") ;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: aqua;
+}
+#hero button{
+    background-image: url("img/button.png");
+    background-color: transparent;
+    color: turquoise;
+    border: 0;
+    padding: 14px 80px 14px 65px ;
+    background-repeat:no-repeat ;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+
+}

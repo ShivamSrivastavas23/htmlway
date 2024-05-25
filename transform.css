@@ -1,0 +1,27 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 3s linear 1s;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    transform:rotate(360deg); 
+    /* we can rotate tilt move diagonaly upward downward 
+    or in any direction as we want */
+    transform: translate(500px,500px);
+}
+p{
+    font-size: 36px;
+}

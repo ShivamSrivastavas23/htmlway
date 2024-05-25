@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        img{
+            margin:10px  ;
+        }
+        /* relative-in relative we move through these property
+         top,bottom,rigt,left  but afer moving the previous 
+         space is blank and maintained in window screen we 
+         cannot use that space for another image */
+        /* .image2{
+            position: relative;
+            top: 100px;
+        } */
+        /* in absolute a image  will overlap to another image
+        and their is no gap maintained like relative */
+        .image2{
+            
+            position: absolute;
+            top: 100;
+            
+              
+        }
+        .image3{
+            position: sticky;
+            top: 100px;
+            /* in case of sticky property if another imag or data 
+            is come in the feildof sticky data then sticky 
+            data will change there place according space */
+        }
+        .image4{
+            position: fixed;
+            /* in fixed position property image willl be fixed 
+            for always */
+            /* it is always fixed at one place */
+        }
+        .container{
+            position: relative;
+             height: 8000px;
+             /* here we make container heoght very bottom: 
+            big so image 4 will fixed and we can move three 
+            images */ 
+
+        }
+        .box{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container
+    ">
+        <img src=""
+         alt="poster 1"
+         width="300px"
+         height="300px"
+         class="image1"
+         >
+         <img src=""
+         alt="poster 2"
+         width="300px"
+         height="300px"
+         class="image2"
+         >
+         <img src=""
+         alt="poster 3"
+         width="300px"
+         height="300px"
+         class="image3"
+         >
+         <img src=""
+         alt="poster 4"
+         width="300px"
+         height="300px"
+         class="image4"
+         >
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>

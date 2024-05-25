@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <!-- selector
+    element - p,article,section -->
+    <!--   -->
+    <style>
+        p{
+            color:brown;
+            /* here we call id in style under head */
+            #article1{
+                background-color:green;
+            }
+            /* just like # is use for id selector simillarly
+            ' . ' is use in class selector
+             */
+             .paraclass{
+                background-color: yellow;
+             }
+             /* group selector is applied using ' , ' */
+             p,article{
+                width:500px;
+             }
+             p.paraclass{
+                text-align: center;
+             }
+        }
+    </style>
+</head>
+<body>
+    <p class="paraclass">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Ex quo pariatur error cupiditate alias amet repudiandae quibusdam aliquid suscipit quam, 
+      deleniti deserunt animi sed nam ullam perspiciatis, odio praesentium voluptatibus.</p>
+      <p class="paraclass">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit sapiente
+         veniam numquam non delectus iusto voluptates alias. Ullam repudiandae 
+         magnam quod quisquam necessitatibus sed doloribus, culpa provident explicabo modi 
+         facere! Illo neque id error vero reprehenderit. Dolore laboriosam impedit quisquam et saepe at 
+        sunt, perspiciatis, totam reiciendis culpa optio praesentium veritatis!</p>
+        <!-- id selector -->
+        <!-- make an id first -->
+        <article id="article1"> my name is shivam srivastava</article>
+
+</body>
+</html>
